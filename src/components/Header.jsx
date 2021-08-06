@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-const Header = () => {
+const Header = (props) => {
 
     return (
         <div className="head-container"> 
@@ -8,7 +8,7 @@ const Header = () => {
          className ="head-image"
          alt = "somepic"
          />
-        <h1>Gimme Heads</h1>
+        <h1 className="head-text" >{props.headTitle}</h1>
         </div>
         
     );
