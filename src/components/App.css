@@ -1,3 +1,6 @@
 body {
-    background-color: rgb(51, 255, 0);
+    background-color: rgb(55, 13, 94);
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: aliceblue;
 }

@@ -1,0 +1,8 @@
+.head-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-image {
+    width: 300px;
+}

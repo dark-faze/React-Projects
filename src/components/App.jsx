@@ -1,12 +1,14 @@
-import React from 'react'
-import './App.css'
+import React from 'react';
+import Header from './Header';
+import './App.css';
+
 
  function App() {
     return (
         <div>
-            <h1>Yo this is lit</h1>
+            <Header/>
         </div>
-    )
+    );
 }
 
 export default App;
