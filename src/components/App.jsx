@@ -5,20 +5,26 @@ import './App.css';
 
 
 class App extends React.Component {
-
-    state = {
+    constructor(){
+        super();
+    this.state = {
         headerText: "Name a Name!",
+        headerExpanded: true,
     };
-
+}
+    handleInputChange = (inputText) => {
+        this.setState({headerExpanded: !(inputText.length > 0 )});
+    };
     
-    render()
-    {
-    return (
-        <div>
-            <Header headTitle={this.state.headerText}/>  
-            <Searchbox/> 
-        </div>
-    );
+    render() {
+     return (
+         <div>
+            <Header 
+            headerExpanded={this.state.headerExpanded}
+            headTitle={this.state.headerText}/> 
+            <Searchbox onInputChange ={this.handleInputChange}/> 
+         </div>
+     );
     }
 }
 
